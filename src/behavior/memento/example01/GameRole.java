@@ -1,5 +1,7 @@
 package behavior.memento.example01;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @description: 发起者
  * @author: shengaojie
@@ -30,10 +32,11 @@ public class GameRole {
         this.def = memento.def;
     }
 
-    public void fight(){
+    public void fight() throws InterruptedException {
         this.vit = vit - 10;
         this.attack = attack - 20;
         this.def = 0;
+        TimeUnit.MILLISECONDS.sleep(100);
 
     }
 

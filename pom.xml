@@ -42,6 +42,12 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.mauricioaniche</groupId>
+            <artifactId>ck</artifactId>
+            <version>0.7.0</version>
+        </dependency>
+
 
     </dependencies>
     <build>

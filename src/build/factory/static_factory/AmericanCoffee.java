@@ -13,6 +13,4 @@ public class AmericanCoffee extends Coffee {
 
         return "美式咖啡";
     }
-
-
 }
