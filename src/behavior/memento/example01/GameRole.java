@@ -32,13 +32,13 @@ public class GameRole {
         this.def = memento.def;
     }
 
-    // public void fight() throws InterruptedException {
-    //     this.vit = vit - 10;
-    //     this.attack = attack - 20;
-    //     this.def = 0;
-    //     TimeUnit.MILLISECONDS.sleep(100);
-    //
-    // }
+    public void fight() throws InterruptedException {
+        this.vit = vit - 10;
+        this.attack = attack - 20;
+        this.def = 0;
+        TimeUnit.MILLISECONDS.sleep(100);
+
+    }
 
     @Override
     public String toString() {

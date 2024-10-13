@@ -4,4 +4,3 @@ dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,behavior/memento/example01/Client.test
-inline,build/prototype/deep_copy/method1/Client.test1
