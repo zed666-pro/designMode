@@ -9,9 +9,9 @@ import java.util.concurrent.TimeUnit;
  **/
 
 public class GameRole {
-    private int vit;
-    private int attack;
-    private int def;
+     int vit;
+     int attack;
+     int def;
 
     public GameRole() {
         this.vit = 100;
@@ -32,13 +32,13 @@ public class GameRole {
         this.def = memento.def;
     }
 
-    public void fight() throws InterruptedException {
-        this.vit = vit - 10;
-        this.attack = attack - 20;
-        this.def = 0;
-        TimeUnit.MILLISECONDS.sleep(100);
-
-    }
+    // public void fight() throws InterruptedException {
+    //     this.vit = vit - 10;
+    //     this.attack = attack - 20;
+    //     this.def = 0;
+    //     TimeUnit.MILLISECONDS.sleep(100);
+    //
+    // }
 
     @Override
     public String toString() {

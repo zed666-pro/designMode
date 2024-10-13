@@ -24,6 +24,13 @@ import java.util.concurrent.TimeUnit;
 @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
 public class Client {
 
+    public void fight(GameRole gameRole) throws InterruptedException {
+        gameRole.vit -= 10;
+        gameRole.attack -= 20;
+        gameRole.def -= 0;
+        TimeUnit.MILLISECONDS.sleep(100);
+
+    }
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.SECONDS)
     @Benchmark
@@ -35,7 +42,7 @@ public class Client {
         CareTaker careTaker = new CareTaker();
         careTaker.setMemento(memento);
 
-        gameRole.fight();
+        fight(gameRole);
         System.out.println("战斗开始后：");
         System.out.println(gameRole);
 
