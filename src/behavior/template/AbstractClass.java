@@ -34,8 +34,6 @@ public abstract class AbstractClass {
 
     public abstract void pourSauce();
 
-
-
     public void fry(){
         System.out.println("抄来抄去");
     }

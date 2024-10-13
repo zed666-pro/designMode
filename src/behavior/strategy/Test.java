@@ -10,7 +10,9 @@ package behavior.strategy;
 
 public class Test {
 
+
     public static void main(String[] args) {
+
 
 
         //今天是中秋采取满一送一的策略

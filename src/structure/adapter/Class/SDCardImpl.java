@@ -6,9 +6,8 @@ package structure.adapter.Class;
  * @email: xxx@xx.com
  * @date: 2023/2/11 15:51
  */
-
-
 public class SDCardImpl implements SDCard {
+
 
     @Override
     public String readSD() {

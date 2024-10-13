@@ -13,7 +13,6 @@ public abstract class Handler {
     protected final static int NUM_THREE = 3;
     protected final static int NUM_SEVEN = 7;
 
-
     //该领导处理的请求天数区间
     private int numStart;
     private int numEnd;
@@ -41,8 +40,6 @@ public abstract class Handler {
 
     //提交请假条
     public final void submit(LeaveRequest leave){
-
-
         if(this.nextHandler != null && leave.getNum() > this.numEnd){
             //交给上级领导审批
             this.nextHandler.submit(leave);
